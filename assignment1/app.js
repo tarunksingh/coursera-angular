@@ -18,11 +18,11 @@ function LunchCfunc($scope){
 			$scope.class = "red";
 		}
 		else if(array.length < 3){
-			$scope.message =array.length+" Item. Enjoy!";
+			$scope.message ="Enjoy!";
 			$scope.class = "green";
 		}
 		else{
-			$scope.message =array.length+" Item. Too much!";
+			$scope.message ="Too much!";
 			$scope.class = "green";
 		}		
 	};
