@@ -5,10 +5,10 @@ angular.module("ShoppingApp",[])
 .controller('AlreadyBoughtController', LunchCfunc2)
 .service('ShoppingListCheckOffService', ShoppingListService);
 
-LunchCfunc.$inject =["$scope","ShoppingListCheckOffService"];
-LunchCfunc2.$inject =["$scope","ShoppingListCheckOffService"];
+LunchCfunc.$inject =["ShoppingListCheckOffService"];
+LunchCfunc2.$inject =["ShoppingListCheckOffService"];
 
-function LunchCfunc($scope ,ShoppingListCheckOffService){
+function LunchCfunc(ShoppingListCheckOffService){
 	var list = this;
 	list.toBuy =ShoppingListCheckOffService.getToBought();
 
@@ -19,7 +19,7 @@ function LunchCfunc($scope ,ShoppingListCheckOffService){
 	};
 
 };
-function LunchCfunc2($scope,ShoppingListCheckOffService){
+function LunchCfunc2(ShoppingListCheckOffService){
 	this.bought =ShoppingListCheckOffService.getBought();
 	
 };
