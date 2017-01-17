@@ -19,6 +19,10 @@ function LunchCfunc($scope ,ShoppingListCheckOffService){
 	};
 
 };
+function LunchCfunc2($scope,ShoppingListCheckOffService){
+	this.bought =ShoppingListCheckOffService.getBought();
+	
+};
 function ShoppingListService(){
 	var list1 = [
 	{
@@ -74,9 +78,6 @@ function ShoppingListService(){
 
 };
 
-function LunchCfunc2($scope,ShoppingListCheckOffService){
-	this.bought =ShoppingListCheckOffService.getBought();
-	
-};
+
 
 })();
